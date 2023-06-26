@@ -1,0 +1,76 @@
+body {
+	font-family: 'Lato', sans-serif;
+	background-color: #1c1c1c;
+}
+
+section {
+	color: #fff;
+}
+
+.budget-item-container {
+	position: relative;
+	width: 70em;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	padding: 0.25em 0;
+}
+
+.budget-item {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.allocation {
+	text-align: right;
+	word-spacing: 0.1em;
+}
+
+.money {
+	font-family: 'Righteous', sans-serif;
+}
+
+.progress-bar {
+	grid-column: 1 / 3;
+}
+
+progress[value] {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+}
+
+.progress-bar progress[value]::-webkit-progress-bar {
+	background-color: #eee;
+	/* border-radius: 2px; */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.progress-bar progress[value]::-webkit-progress-value {
+	position: relative;
+	/* border-radius: 2px; */
+	/* background: linear-gradient(to bottom, hsl(171, 76%, 45%) 10%, hsl(171, 76%, 45%) 50%); */
+	background: #00e396;
+}
+
+.over-budget {
+	color: #ff4560;
+}
+.under-budget {
+	color: #00e396;
+}
+
+.over-budget progress[value]::-webkit-progress-value {
+	background: linear-gradient(to bottom, #900 10%, #b00 30%);
+}
+
+.main-container-budget-bars {
+	max-width: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+	.budget-item-container {
+		max-width: 90vw;
+		margin-left: 0.5rem;
+	}
+}

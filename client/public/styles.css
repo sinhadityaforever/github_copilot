@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    
+    background: linear-gradient(
+    106.37deg,
+    #ffe1bc 29.63%,
+    #2596be,
+    #2596be,
+  );
+  height: 100vh;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  font-family: 'Inter', sans-serif;
+
+}

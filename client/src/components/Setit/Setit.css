@@ -1,0 +1,12 @@
+.green{
+
+	color: #35c33a;
+	font-family: 'Inter', sans-serif;
+	margin-left: 200px;
+	margin-top: 17px;
+	font-weight: 500;
+}
+
+.flex-child{
+	cursor: pointer;
+}

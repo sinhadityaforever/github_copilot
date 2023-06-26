@@ -1,0 +1,81 @@
+.Dashboard {
+	/* padding-top: 1rem; */
+	display: flex;
+	padding-top: 5rem;
+	flex-direction: column;
+	justify-content: space-evenly;
+	overflow-y: auto;
+	scrollbar-width: none;
+	color: white;
+	overflow-x: hidden;
+}
+
+.topDivision {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.bottomDiv {
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-self: space-between;
+}
+.db-title {
+	display: none;
+}
+
+/* @media screen and (max-width: 1200px) {
+	.Dashboard {
+		padding-top: 1rem;
+		overflow-y: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.topDiv {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		overflow-y: auto;
+	}
+
+	.topDiv > * {
+		margin-bottom: 1rem;
+	}
+	.bottomDiv {
+		flex: 1;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-self: auto;
+	}
+} */
+
+@media screen and (max-width: 768px) {
+	.Dashboard {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		overflow-y: auto;
+		position: relative;
+		padding-top: 0;
+	}
+
+	.db-title {
+		display: block;
+	}
+
+	.topDivision {
+		display: flex;
+		flex-direction: column;
+	}
+	.bottomDiv {
+		display: flex;
+		flex-direction: column;
+	}
+}
