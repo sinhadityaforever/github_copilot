@@ -9,8 +9,17 @@ A web based application to keep track of personal finances.
 ![App Screenshot](https://snipboard.io/72LnSg.jpg)
 ![App Screenshot](https://snipboard.io/6eF1tI.jpg)
 ![App Screenshot](https://snipboard.io/q9ncHo.jpg)
+![App Screenshot](https://snipboard.io/RM0Y3s.jpg)
 
 
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run deploy
+```
 
 
 ## Live Website
@@ -23,9 +32,8 @@ https://trackifi.vercel.app/
 
 ## Tech Stack
 
-Frontend: React, Redux Toolkit, MaterialUI
-APIs: Express.js, JWT token, Mongoose
-Database: MongoDB
+Frontend: React, Redux, React-Router, MaterialUI
+Backend: Express.js, JWT, Mongoose, MongoDB
 
 
 
@@ -35,6 +43,8 @@ Database: MongoDB
 - Adding/Editing/Deleting Transactions
 - Adding/Editing monthly/category-wise budget
 - Analysis of spending habits using useful graphs
-- Token based Authentication
+- Adding/Editing Monthly and Yearly Budget
+- Adding/Editing Categorywise Budget
+- JWT based authentication, adding/editing personal information
 
 
