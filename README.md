@@ -9,18 +9,30 @@ A web based application to keep track of personal finances.
 ![App Screenshot](https://snipboard.io/72LnSg.jpg)
 ![App Screenshot](https://snipboard.io/6eF1tI.jpg)
 ![App Screenshot](https://snipboard.io/q9ncHo.jpg)
-![App Screenshot](https://snipboard.io/RM0Y3s.jpg)
 
 
 
-## Deployment
+## Running the app in development mode
 
-To deploy this project run
+1. Create two .env files, one in server, and other in client folder.
+
+
+a) The server .env:
 
 ```bash
-  npm run deploy
+JWT_KEY: "Key for JWT token"
+MONGO_URI: "Database URI"
+PORT: "Port on which server should be running"
 ```
 
+b) The client .env:
+
+```bash
+REACT_APP_API_URL= "URL of server (Eg: http://localhost:5000)"
+```
+
+2. Start the server by running "npm run dev" inside server folder.
+3. Start the client by running "npm start" inside client folder.
 
 ## Live Website
 
@@ -32,8 +44,7 @@ https://trackifi.vercel.app/
 
 ## Tech Stack
 
-Frontend: React, Redux, React-Router, MaterialUI
-Backend: Express.js, JWT, Mongoose, MongoDB
+Frontend: React, Redux, MaterialUI
 
 
 
@@ -43,8 +54,5 @@ Backend: Express.js, JWT, Mongoose, MongoDB
 - Adding/Editing/Deleting Transactions
 - Adding/Editing monthly/category-wise budget
 - Analysis of spending habits using useful graphs
-- Adding/Editing Monthly and Yearly Budget
-- Adding/Editing Categorywise Budget
-- JWT based authentication, adding/editing personal information
 
 
