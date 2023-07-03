@@ -30,9 +30,9 @@ b) The client .env:
 ```bash
 REACT_APP_API_URL= "URL of server (Eg: http://localhost:5000)"
 ```
-
-2. Start the server by running "npm run dev" inside server folder.
-3. Start the client by running "npm start" inside client folder.
+2. Install all the dependencies by running "npm install" in both client and server folders.
+3. Start the server by running "npm run dev" inside server folder.
+4. Start the client by running "npm start" inside client folder.
 
 ## Live Website
 
